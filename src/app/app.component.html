@@ -1,0 +1,13 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="user">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Usuario</a>
+        <button class="btn btn-link nav-item nav-link" (click)="logout()">Salir</button>
+    </div>
+</nav>
+
+
+<div class="container">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
